@@ -1,11 +1,11 @@
 import React from 'react';
 import "./search.css";
 
-const Search = (props) => {
+const Search = ({value, change, getValue}) => {
     return(
         <div className="container">
             <h1>Search Giphy</h1>
-            <input type='text' placeholder='Search' />
+            <input type='text' placeholder='Search' value={value} onChange={change} onKeyDown={getValue} />
         </div>
     )
 }
