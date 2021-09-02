@@ -1,9 +1,9 @@
 import React from 'react';
-
+import './header.css';
 const Header = () => {
     return(
-        <header className="container">
-            Giphy App
+        <header>
+            <h2 className="container">Giphy App</h2>
         </header>
     )
 }
