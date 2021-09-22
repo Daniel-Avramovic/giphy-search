@@ -26,19 +26,11 @@ class App extends React.Component {
         const url = `http://api.giphy.com/v1/gifs/search?api_key=${api_key}&limit=15&q=${this.state.value}`;
         fetch(url)
           .then((response) => response.json())
-          .then((data) => this.setState({ result: data.data, value: "" }));
+          .then((data) => this.setState({ result: data.data, value: ""}));
       }
     };
   }
   
-  // componentDidMount() {
-  //   const api_key = "tlHJrXyl4T6FMd6KqxCEM163PtuKXIub";
-  //   const url = `http://api.giphy.com/v1/gifs/search?api_key=${api_key}&limit=15&q=${this.state.value}`;
-  //   fetch(url)
-  //     .then((response) => response.json())
-  //     .then((data) => this.setState({ result: data.data }));
-  // }
-
   render() {
     return (
       <Fragment>
